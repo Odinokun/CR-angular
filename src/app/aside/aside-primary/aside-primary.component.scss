@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  background-color: #1d2531;
+}
+
+.aside-primary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: none;
+  width: 100px;
+  padding: 20px 0;
+}

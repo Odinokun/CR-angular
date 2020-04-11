@@ -6,6 +6,8 @@ import { AsideComponent } from './aside/aside.component';
 import { MainComponent } from './main/main.component';
 import { AsidePrimaryComponent } from './aside/aside-primary/aside-primary.component';
 import { AsideSecondaryComponent } from './aside/aside-secondary/aside-secondary.component';
+import { AsidePrimaryIconsComponent } from './aside/aside-primary/aside-primary-icons/aside-primary-icons.component';
+import { AsidePrimaryToolsComponent } from './aside/aside-primary/aside-primary-tools/aside-primary-tools.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { AsideSecondaryComponent } from './aside/aside-secondary/aside-secondary
     AsideComponent,
     MainComponent,
     AsidePrimaryComponent,
-    AsideSecondaryComponent
+    AsideSecondaryComponent,
+    AsidePrimaryIconsComponent,
+    AsidePrimaryToolsComponent
   ],
   imports: [
     BrowserModule
