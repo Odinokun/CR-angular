@@ -1,8 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
-:root {
-  --btn-gradient: linear-gradient(to top, #1991eb 0%, #2ea1f8 100%);
-}
+@import "variables.scss";
 
 *,
 *::before,
@@ -29,6 +26,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-.btn {
-  background-image: var(--btn-gradient);
+svg {
+  display: block;
+  overflow: visible;
 }
