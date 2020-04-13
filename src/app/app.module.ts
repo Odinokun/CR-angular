@@ -11,6 +11,7 @@ import { AsidePrimaryToolsComponent } from './aside/aside-primary/aside-primary-
 import { AsideSecondaryMenuComponent } from './aside/aside-secondary/aside-secondary-menu/aside-secondary-menu.component';
 import { AsideSecondaryFriendsComponent } from './aside/aside-secondary/aside-secondary-friends/aside-secondary-friends.component';
 import { AsideSecondarySearchComponent } from './aside/aside-secondary/aside-secondary-search/aside-secondary-search.component';
+import { MainHeaderComponent } from './main/main-header/main-header.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AsideSecondarySearchComponent } from './aside/aside-secondary/aside-sec
     AsidePrimaryToolsComponent,
     AsideSecondaryMenuComponent,
     AsideSecondaryFriendsComponent,
-    AsideSecondarySearchComponent
+    AsideSecondarySearchComponent,
+    MainHeaderComponent
   ],
   imports: [
     BrowserModule
