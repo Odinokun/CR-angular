@@ -4,7 +4,7 @@
 
 .aside-primary-icons__list {
   margin: 0;
-  padding: 0;
+  padding: 10px 0 0 0;
 }
 
 .aside-primary-icons__item {
@@ -27,6 +27,11 @@
     border-radius: 50%;
     background-color: #2399f1;
     box-shadow: 0 0 10px rgba(35, 153, 241, .47);
+  }
+  &:hover {
+    .aside-primary-icons__link {
+      opacity: 1;
+    }
   }
   &.active {
     &::before {
