@@ -18,6 +18,7 @@ import { MainBodyComponent } from './main/main-body/main-body.component';
 import { PersonEventsComponent } from './main/main-body/main-right/person-events/person-events.component';
 import { MainLeftComponent } from './main/main-body/main-left/main-left.component';
 import { ScheduleComponent } from './main/main-body/main-left/schedule/schedule.component';
+import { StatsComponent } from './main/main-body/main-left/stats/stats.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ScheduleComponent } from './main/main-body/main-left/schedule/schedule.
     MainBodyComponent,
     PersonEventsComponent,
     MainLeftComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    StatsComponent
   ],
   imports: [
     BrowserModule
