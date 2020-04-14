@@ -12,6 +12,10 @@ import { AsideSecondaryMenuComponent } from './aside/aside-secondary/aside-secon
 import { AsideSecondaryFriendsComponent } from './aside/aside-secondary/aside-secondary-friends/aside-secondary-friends.component';
 import { AsideSecondarySearchComponent } from './aside/aside-secondary/aside-secondary-search/aside-secondary-search.component';
 import { MainHeaderComponent } from './main/main-header/main-header.component';
+import { PersonCardComponent } from './main/main-body/main-right/person-card/person-card.component';
+import { MainRightComponent } from './main/main-body/main-right/main-right.component';
+import { MainBodyComponent } from './main/main-body/main-body.component';
+import { PersonEventsComponent } from './main/main-body/main-right/person-events/person-events.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { MainHeaderComponent } from './main/main-header/main-header.component';
     AsideSecondaryMenuComponent,
     AsideSecondaryFriendsComponent,
     AsideSecondarySearchComponent,
-    MainHeaderComponent
+    MainHeaderComponent,
+    PersonCardComponent,
+    MainRightComponent,
+    MainBodyComponent,
+    PersonEventsComponent
   ],
   imports: [
     BrowserModule
