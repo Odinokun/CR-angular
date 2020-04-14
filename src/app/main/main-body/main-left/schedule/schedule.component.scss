@@ -1,0 +1,39 @@
+@import '../../../../../variables.scss';
+
+.schedule {
+  width: calc(100% - 30px);
+  margin-bottom: 20px;
+  padding: 30px;
+  border: 1px solid #e6eaee;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.schedule__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.schedule__title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #354052;
+}
+
+.schedule__btn {
+  font-size: 12px;
+  line-height: 26px;
+  display: inline-block;
+  height: 26px;
+  padding: 0 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #b5b5b5;
+  border-radius: 13px;
+  &.active {
+    padding: 0 17px;
+    pointer-events: none;
+    color: #fff;
+    background-image: $btn-gradient;
+  }
+}

@@ -16,6 +16,8 @@ import { PersonCardComponent } from './main/main-body/main-right/person-card/per
 import { MainRightComponent } from './main/main-body/main-right/main-right.component';
 import { MainBodyComponent } from './main/main-body/main-body.component';
 import { PersonEventsComponent } from './main/main-body/main-right/person-events/person-events.component';
+import { MainLeftComponent } from './main/main-body/main-left/main-left.component';
+import { ScheduleComponent } from './main/main-body/main-left/schedule/schedule.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { PersonEventsComponent } from './main/main-body/main-right/person-events
     PersonCardComponent,
     MainRightComponent,
     MainBodyComponent,
-    PersonEventsComponent
+    PersonEventsComponent,
+    MainLeftComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule
