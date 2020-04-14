@@ -19,6 +19,7 @@ import { PersonEventsComponent } from './main/main-body/main-right/person-events
 import { MainLeftComponent } from './main/main-body/main-left/main-left.component';
 import { ScheduleComponent } from './main/main-body/main-left/schedule/schedule.component';
 import { StatsComponent } from './main/main-body/main-left/stats/stats.component';
+import { ReferrerComponent } from './main/main-body/main-left/referrer/referrer.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { StatsComponent } from './main/main-body/main-left/stats/stats.component
     PersonEventsComponent,
     MainLeftComponent,
     ScheduleComponent,
-    StatsComponent
+    StatsComponent,
+    ReferrerComponent
   ],
   imports: [
     BrowserModule
