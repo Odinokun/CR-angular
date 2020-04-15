@@ -1,11 +1,14 @@
 .referrer {
-  width: calc(100% - 30px);
+  overflow-x: scroll;
+  width: 100%;
+  max-width: 100%;
   margin-bottom: 20px;
   border-radius: 4px;
 }
 
 .referrer__table {
   width: 100%;
+  min-width: 500px;
   border-collapse: collapse;
   border: 1px solid #e7e9ed;
 }
@@ -37,6 +40,16 @@
     padding-left: 29px;
     color: #354052;
   }
+}
+
+.referrer__th-sortable {
+  display: flex;
+  align-items: center;
+}
+
+.referrer__th-sort-btn {
+  margin-left: 19px;
+  cursor: pointer;
 }
 
 .referrer__tbody {

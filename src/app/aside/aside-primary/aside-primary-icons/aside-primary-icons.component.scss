@@ -1,3 +1,5 @@
+@import '../../../../mixins.scss';
+
 :host {
   width: 100%;
 }
@@ -13,6 +15,10 @@
   margin-bottom: 30px;
   padding: 0;
   list-style: none;
+
+  @include max(480) {
+    margin-bottom: 15px;
+  }
   &::before {
     position: absolute;
     top: 0;
@@ -51,6 +57,10 @@
   transition: opacity .5s ease-in-out;
   opacity: .5;
   border-radius: 50%;
+
+  @include max(480) {
+    max-width: 35px;
+  }
 
   img {
     display: block;
