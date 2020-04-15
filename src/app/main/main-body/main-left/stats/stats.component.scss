@@ -1,8 +1,10 @@
+@import '../../../../../mixins.scss';
+
 .stats {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: calc(100% - 30px);
+  width: 100%;
 }
 
 .stats-item {
@@ -13,6 +15,13 @@
   border: 1px solid #e6eaee;
   border-radius: 4px;
   background-color: #fff;
+
+  @include max(680) {
+    width: calc(50% - 10px);
+  }
+  @include max(580) {
+    width: 100%;
+  }
 }
 
 .stats-item__top {
@@ -21,6 +30,7 @@
   justify-content: center;
   align-items: center;
   padding: 23px 15px 22px 15px;
+  background-color: #fff;
 }
 
 .stats-item__val {
@@ -32,6 +42,7 @@
 
 .stats-item__descr {
   font-size: 12px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -58,6 +69,7 @@
   justify-content: center;
   align-items: center;
   min-height: 50px;
+  margin-top: auto;
   padding: 5px;
   border-top: 1px solid #e6eaee;
   background-color: #f5f8fa;

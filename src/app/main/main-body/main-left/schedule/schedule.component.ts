@@ -17,8 +17,7 @@ export class ScheduleComponent implements OnInit {
       data: {
         labels: ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', ''],
         datasets: [{
-          label: 'Earnings',
-          data: [80, 105, 310, 70, 105, 405, 110, 203, 115, 220],
+          data: [80, 105, 310, 70, 105, 400, 110, 203, 115, 220],
           backgroundColor: [
             'rgba(29, 148, 237, 0.1)'
           ],
@@ -48,18 +47,58 @@ export class ScheduleComponent implements OnInit {
           yAxes: [{
             ticks: {
               beginAtZero: true,
-              maxTicksLimit: '6'
+              stepSize: 100,
+              fontColor: 'rgba(126, 140, 160, .5)',
+              fontSize: '11',
+              fontFamily: '\'Source Sans Pro\', sans-serif',
+              padding: -20,
+              callback: (value, index, values) => {
+                return '$' + value;
+              }
             },
+            gridLines: {
+              color: '#ebf1f5',
+              lineWidth: 1,
+              zeroLineWidth: 1,
+              zeroLineColor: '#b2e5ff',
+              drawBorder: false,
+              tickMarkLength: 0
+            },
+          }],
+          xAxes: [{
+            ticks: {
+              fontColor: 'rgba(126, 140, 160, .5)',
+              fontSize: '11',
+              fontFamily: '\'Source Sans Pro\', sans-serif'
+            },
+            gridLines: {
+              zeroLineWidth: 1,
+              display: false
+            }
           }]
+        },
+        tooltips: {
+          backgroundColor: '#222c3c',
+          displayColors: false,
+          bodyFontSize: 14,
+          titleFontSize: 0,
+          titleMarginBottom: 2,
+          caretPadding: 9,
+          cornerRadius: 3,
+          xPadding: 17,
+          yPadding: 8,
+          callbacks: {
+            label: (tooltipItem, data) => {
+              return 'Earnings: ' + tooltipItem.yLabel;
+            }
+          }
         },
         legend: {
           display: false
-        },
-        tooltips: {
-          backgroundColor: '#222c3c'
         }
       }
     });
+
   }
 
   constructor() { }

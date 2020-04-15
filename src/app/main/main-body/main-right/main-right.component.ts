@@ -9,7 +9,15 @@ export class MainRightComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    const profileOpen = document.getElementById('header-profile');
+    const profile = document.getElementById('main__right');
+    const layout = document.getElementById('main__body');
+
+    profileOpen.addEventListener('click', () => {
+      profile.classList.toggle('active');
+      layout.classList.toggle('active');
+    });
   }
 
 }

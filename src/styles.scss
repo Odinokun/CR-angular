@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "variables.scss";
+@import 'variables.scss';
 
 *,
 *::before,
@@ -17,12 +17,18 @@ body {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
-  line-height: 1.38;
   font-weight: 600;
+  line-height: 1.38;
   color: #333c48;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 

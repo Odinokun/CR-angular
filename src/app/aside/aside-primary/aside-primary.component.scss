@@ -1,4 +1,8 @@
+@import '../../../mixins.scss';
+
 :host {
+  position: relative;
+  z-index: 10;
   display: flex;
   background-color: #1d2531;
 }
@@ -10,4 +14,8 @@
   flex: none;
   width: 100px;
   padding: 20px 0;
+
+  @include max(480) {
+    width: 70px;
+  }
 }

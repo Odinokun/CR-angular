@@ -9,7 +9,13 @@ export class AsideSecondaryComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    const btn = document.getElementById('aside-secondary__mobile-btn');
+    const aside = document.getElementById('aside-secondary');
+
+    btn.addEventListener('click', () => {
+      aside.classList.toggle('active');
+    });
   }
 
 }
