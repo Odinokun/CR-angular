@@ -32,6 +32,7 @@ export class ScheduleComponent implements OnInit {
         }]
       },
       options: {
+          aspectRatio: 3,
         scales: {
           yAxes: [{
             ticks: {
