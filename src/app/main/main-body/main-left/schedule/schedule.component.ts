@@ -21,18 +21,7 @@ export class ScheduleComponent implements OnInit {
           backgroundColor: [
             'rgba(29, 148, 237, 0.1)'
           ],
-          borderColor: [
-            'rgba(29, 148, 237, 1)',
-            'rgba(29, 148, 237, 1)',
-            'rgba(29, 148, 237, 1)',
-            'rgba(29, 148, 237, 1)',
-            'rgba(29, 148, 237, 1)',
-            'rgba(29, 148, 237, 1)',
-            'rgba(29, 148, 237, 1)',
-            'rgba(29, 148, 237, 1)',
-            'rgba(29, 148, 237, 1)',
-            'rgba(29, 148, 237, 1)'
-          ],
+          borderColor: '#00a8ff',
           borderWidth: 3,
           lineTension: 0,
           pointBackgroundColor: 'transparent',
